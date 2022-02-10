@@ -1,10 +1,25 @@
-﻿const loginInput = document.querySelector("#login-form input");
-const loginForm = document.querySelector("#login-form");
+﻿const title = document.querySelector("div.hello:first-child h2");
 
-function loginBtnSubmit(info) {
-    info.preventDefault();
-    //const username = loginInput.value;
-    console.log(info);
-}
+const superEventHandler = {
+    handleMouseIn: function handleMouseIn() {
+        title.innerText = "The mouse is here";
+        title.style.color = "blue";
+    },
+    handleMouseLeave: function handleMouseLeave() {
+        title.innerText = "The mouse is gone";
+        title.style.color = "pink";
+    },
+    handleMouseClick: function handleMouseClick() {
+        title.innerText = "That was a right click";
+        title.style.color = "tomato";
+    },
+    handleWindowResize: function handleWindowResize() {
+        title.innerText = "You just resized";
+        title.style.color = "purple";
+    }
+};
+title.addEventListener("mouseenter", superEventHandler.handleMouseIn);
+title.addEventListener("mouseleave", superEventHandler.handleMouseLeave);
 
-loginForm.addEventListener("submit", loginBtnSubmit);
+window.addEventListener("contextmenu", superEventHandler.handleMouseClick);
+window.addEventListener("resize", superEventHandler.handleWindowResize);
