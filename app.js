@@ -1,25 +1,13 @@
-﻿const title = document.querySelector("div.hello:first-child h2");
+﻿const loginInput = document.querySelector("#login-form input");
+const loginForm = document.querySelector("#login-form");
 
-const superEventHandler = {
-    handleMouseIn: function handleMouseIn() {
-        title.innerText = "The mouse is here";
-        title.style.color = "blue";
-    },
-    handleMouseLeave: function handleMouseLeave() {
-        title.innerText = "The mouse is gone";
-        title.style.color = "pink";
-    },
-    handleMouseClick: function handleMouseClick() {
-        title.innerText = "That was a right click";
-        title.style.color = "tomato";
-    },
-    handleWindowResize: function handleWindowResize() {
-        title.innerText = "You just resized";
-        title.style.color = "purple";
-    }
-};
-title.addEventListener("mouseenter", superEventHandler.handleMouseIn);
-title.addEventListener("mouseleave", superEventHandler.handleMouseLeave);
+function loginBtnSubmit(info) {
+    info.preventDefault();
+    //const username = loginInput.value;
+    console.log(info);
+}
 
-window.addEventListener("contextmenu", superEventHandler.handleMouseClick);
-window.addEventListener("resize", superEventHandler.handleWindowResize);
+loginForm.addEventListener("submit", loginBtnSubmit);
+
+//새로고침은 form submit의 기본 동작이다.
+//preventDefault() 함수는 어떤 event의 기본 행동이든지 발생되지 않도록 막는다.
