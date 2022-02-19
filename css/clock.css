@@ -1,0 +1,32 @@
+﻿.clock-box {
+    width: 110px;
+    height: 40px;
+    color: #92A8D1;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px); /*블러 정도*/
+    position: relative;
+    transition: 0.5s;
+}
+
+.clock-box:hover{
+    transform: scale(1.1);
+    color: #FFFFFF;
+    border: 1px solid #92A8D1;
+    background-color:#92A8D1;
+}
+
+.clock {
+    top: 15px;
+    right: 15px;
+    width: 55px;
+    height: 35px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 23px;
+}
