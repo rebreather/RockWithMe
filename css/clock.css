@@ -1,7 +1,17 @@
-﻿.clock-box {
-    width: 110px;
+﻿@font-face {
+    font-family: 'butler';
+    font-weight: bold;
+    src: url("./font/Butler_Regular.otf") format("opentype");
+    font-style: italic;
+}
+
+.clock-box {
+    width: 75px;
     height: 40px;
-    color: #92A8D1;
+    top:15px;
+    left:20px;
+    color: #FFFFFF;
+    font-family: 'butler';
     font-style: italic;
     background: rgba(255, 255, 255, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.8);
@@ -9,7 +19,7 @@
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px); /*블러 정도*/
-    position: relative;
+    position: absolute;
     transition: 0.5s;
 }
 
@@ -21,12 +31,14 @@
 }
 
 .clock {
-    top: 15px;
-    right: 15px;
+    text-align: center;
+    top: 30px;
+    left: 22px;
     width: 55px;
     height: 35px;
+    font-family: 'butler';
     margin-left: 5px;
     margin-top: 5px;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 26px;
 }
