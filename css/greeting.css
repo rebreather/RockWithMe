@@ -1,0 +1,68 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Raleway:200,400|PT+Mono&display=swap");
+
+.hidden {
+    display: none;
+}
+
+.login-input{
+    border:none;
+    border-bottom: 2px solid white;
+    width: 200px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    left: 150px;
+    top: 8px;
+    background: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    transition: 0.5s;
+}
+
+.login-input::placeholder{
+    color:rgba(255,255,255,0.6);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.login-input:hover{
+    transform: scale(1.1);
+    border-bottom: 2px solid #F7CAC9;
+}
+
+.login-btn{
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    top: 16px;
+    left: 380px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255,255,255,0.2);
+    font-size: 15px;
+    color: white;
+    transition: 0.4s;
+}
+
+.login-btn:hover{
+    transform: scale(1.2);
+    color: #F7CAC9;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background: rgba(255,255,255,0.8);
+}
+
+.greeting {
+    position: absolute;
+    left: 150px;
+    top: 10px;
+    width:auto;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color:white;
+}

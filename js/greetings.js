@@ -1,4 +1,7 @@
-﻿const loginInput = document.querySelector("#login-form input");
+﻿const modal = document.querySelector("#modal");
+const btn = document.querySelector(".modal-btn");
+
+const loginInput = document.querySelector("#login-form input");
 const loginForm = document.querySelector("#login-form");
 const greeting = document.querySelector("#greeting");
  
@@ -15,8 +18,14 @@ function loginBtnSubmit(info) {
 }
 
 function paintGreetings(username) {
-  greeting.innerText = `Hello ${username}! Have a good day :)`;
-  greeting.classList.remove(HIDDEN_CLASSNAME);
+  if(username === '') {
+    greeting.innerText = `Hi Stranger👋`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+  }
+  else {
+    greeting.innerText = `Hi ${username}👋`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+  }
 }
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
