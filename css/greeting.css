@@ -4,6 +4,12 @@
     display: none;
 }
 
+.login-box {
+    width:100%;
+    display: flex;
+    position: absolute;
+}
+
 .login-input{
     border:none;
     border-bottom: 2px solid white;
@@ -58,8 +64,8 @@
 
 .greeting {
     position: absolute;
-    left: 150px;
-    top: 10px;
+    left: 170px;
+    top: 16px;
     width:auto;
     font-size: 20px;
     font-style: italic;
