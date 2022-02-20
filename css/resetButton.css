@@ -1,0 +1,22 @@
+﻿.reset-box {
+    width:70px;
+    height: 25px;
+    background: none;
+    position: absolute;
+    top: 2%;
+    right: 1%;
+}
+.resetBtn {
+    position: absolute;
+    background: none;
+    width: 60px;
+    height: 28px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255,255,255,0.2);
+    font-size: 15px;
+    color: white;
+    transition: 0.4s;
+}
