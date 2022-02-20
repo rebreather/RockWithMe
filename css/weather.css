@@ -1,8 +1,12 @@
 ﻿.weather-box {
+    position:absolute;
+    display: flex;
+    float:right;
+
     width: 150px;
     height: 80px;
-    top:8px;
-    left:1114px;
+    top:65px;
+
     color: #FFFFFF;
     font-style: italic;
     background: rgba(255, 255, 255, 0.3);
@@ -11,7 +15,6 @@
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px); /*블러 정도*/
-    position: absolute;
     transition: 0.5s;
 }
 
@@ -26,7 +29,7 @@
     display: block;
     position: absolute;
     top: 10px;
-    right: 15px;
+    left:15px;
     width: 55px;
     height: 55px;
     font-weight: bold;
@@ -36,7 +39,7 @@
     display: block;
     position: absolute;
     bottom: 10px;
-    left: 30px;
+    left: 15px;
     width: 120px;
     height: 20px;
     font-size: 14px;
