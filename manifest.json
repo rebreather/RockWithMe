@@ -14,10 +14,12 @@
 "icons": {
    "128": "logo.png"
 },
-
 "permissions": [
     "geolocation",
     "unlimitedStorage",
     "notifications"
-]
+],
+"chrome_url_overrides" : {
+    "newtab": "index.html"
+}
 }
