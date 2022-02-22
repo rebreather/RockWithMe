@@ -6,12 +6,23 @@
 } /*어떤 요소에게든 이 classname을 주면 그 요소를 숨기게 된다.*/
 
 .top-menu {
-    width: 100%;
+    width: 90%;
     display: flex;
-    height: 150px;
+    height: 75px;
 }
-
+.middle-menu {
+    width:90%;
+    display: flex;
+    height: 30px;
+    margin: 10px 0 30px 10px;
+}
+.third-menu {
+    display: 100%;
+    width: 90%;
+    height: 350px;
+    left: 30px;
+}
 .bottom {
-    width: 100;
+    width: 90%;
     bottom:2%;
 }
