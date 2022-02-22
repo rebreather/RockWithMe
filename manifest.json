@@ -2,7 +2,7 @@
 "manifest_version": 3,
 
 "name": "Rock With Me",
-"description": "Replace new tap page with a personal dashboard(SEVENTEEN) featuring Todo, weather, random background, and quotes.",
+"description": "Replace new tap page with a personal dashboard(SEVENTEEN) featuring Todo, search bar, random background, and quotes.",
 "version": "1.0.0",
 
 "author": "GY LEE",
@@ -15,9 +15,7 @@
    "128": "logo.png"
 },
 "permissions": [
-    "geolocation",
-    "unlimitedStorage",
-    "notifications"
+    "unlimitedStorage"
 ],
 "chrome_url_overrides" : {
     "newtab": "index.html"
