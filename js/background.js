@@ -36,7 +36,7 @@ function imageFix(event) {
 }
 
 function getRandomNum() {
-    const number = Math.floor(Math.random()*(images.length));
+    const number = Math.floor(Math.random()*(images.length-1));
     return number;
 }
 
