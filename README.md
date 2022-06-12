@@ -5,7 +5,7 @@
 > 
 
 > “Rock With Me” is  a chrome extensions program, which replaces new tap page with a personal dashboard featuring Todo, weather, random background, and quotes.
->
+> 
 <br>
 
 ### ✨주요 기능
@@ -15,3 +15,11 @@
 - 세븐틴 사진이 배경에 랜덤으로 들어갑니다.
 - Todo List를 작성할 수 있습니다.
 - Reset 버튼을 통해 로그아웃이 가능합니다. (단, Todo를 비롯한 모든 정보가 지워집니다)
+
+### ✔기술 스택
+***
+- Javascript
+
+### 📎링크
+***
+- https://chrome.google.com/webstore/detail/rock-with-me/imcdkgalfiniblolaipfffnfbicpkmeb?hl=ko
