@@ -1,75 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/clock.css">
-  <link rel="stylesheet" href="css/quote.css">
-  <link rel="stylesheet" href="css/greeting.css">
-  <link rel="stylesheet" href="css/todo.css">
-  <link rel="stylesheet" href="css/background.css">
-  <link rel="stylesheet" href="css/resetButton.css">
-  <link rel="stylesheet" href="css/search.css">
-  <title>Rock With Me</title>
-</head>
-<body>
-  <div id="background"></div>
-  <div class = "top-menu"> <!--시계, 로그인폼, 날씨-->
-    <div class = "clock-box">
-          <div id = "clock" class = "clock"></div>
-    </div>
-    <div class="login-box">
-      <form id = "login-form" class="hidden">
-        <input
-          class = "login-input"
-          maxlength = "15"
-          type = "text"
-          placeholder="What is your name?"
-          />
-        <input type = "submit" value = "login" class="login-btn"/>
-      </form>
-    </div>
-    
-    <div class = "greeting-box">
-      <span id = "greeting" class="greeting hidden"></span>
-    </div>
-
-    <div class="reset-box">
-      <button id = "resetBtn" class="resetBtn">Reset</button>
-    </div>
-  </div>
-
-  <div class = "middle-menu"> <!--search bar-->
-    <form method=get action="http://www.google.co.kr/search" target="_blank">
-      <input class = "search-input" placeholder="Search..." type=text name=q size=25 maxlength=255 autocomplete = "off" value="" />
-      <!-- 구글 검색 입력 창 -->
-    </form>
-  </div>
-
-  <div class="third-menu"> <!--todo-->
-    <div class = "todo-box">
-      <form id = "todo-form" class="todo-form">
-        <input type = "text" maxlength = "15" placeholder="Write a ToDo, press Enter" class = "todo-input"/>
-      </form>
-      <div class="todo-list-box">
-        <ul style="list-style-type:none;" id = "todo-list" class = "todo-list">
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class = "bottom">
-    <div id = "quote" class = "quote-box">
-      <span class = "quote-content"></span>
-    </div>
-  </div>
-  
-  <script src = "js/greetings.js"></script>
-  <script src = "js/clock.js"></script>
-  <script src = "js/quetoes.js"></script>
-  <script src = "js/background.js"></script>
-  <script src = "js/todo.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock With Me</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
