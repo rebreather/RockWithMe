@@ -3,11 +3,15 @@ export default {
   purge: ['./index.html', './src/**/*.{vue,js,ts,cjs,mjs,}'],
   content: [],
   theme: {
-    extend: {},
-    // screens: {
-    //   lg: '1024px',
-    //   xl: '1280px'
-    // }
+    extend: {
+      scale: {
+        '130': '1.3',
+      },
+      colors: {
+        'rosequarts': '#F7CAC9',
+        'serenity': '#92A8D1',
+      }
+    },
   },
   plugins: [],
 }
