@@ -1,12 +1,14 @@
 <template>
   <div class="px-[2.4rem] py-[2rem]" id="background" :style="backgroundStyle">
     <Header />
+    <Todo />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed } from 'vue';
 import Header from './Header.vue';
+import Todo from './Todo.vue';
 
 const currentImageIndex = ref(0);
 const isWidthFix = ref(false);
