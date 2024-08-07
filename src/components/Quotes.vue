@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center">
-        <span class="absolute bottom-3 text-white text-xs italic">{{ quote }}</span>
+        <span class="absolute bottom-3 text-white text-[10px] italic">{{ quote }}</span>
     </div>
 </template>
 
