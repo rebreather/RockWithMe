@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col text-sm text-white bg-white/20 backdrop-blur-sm w-[15rem] h-[22rem] rounded-md mt-4">
+    <div class="flex flex-col text-sm text-white bg-white/20 backdrop-blur-sm w-1/5 h-3/5 rounded-md mt-4">
         <div class="mb-2 p-2 border-b-double border-b-[1px] border-b-serenity">
             <form @submit="submit">
             <input class="w-full text-center transition duration-500 hover:scale-110 italic bg-transparent outline-none placeholder: placeholder-white placeholder-opacity-60" type="text" maxlength="30" placeholder="Write a ToDo, press Enter" :value="todoInput" @input="changeTodo"/>
