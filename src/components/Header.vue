@@ -6,9 +6,7 @@
             </span>
             <div class="flex items-center">
                 <span class="text-white italic ml-[2rem]">{{ greetingText }}</span>
-                <form @submit="submit">
-                    <input v-if="!hasNickname" class="outline-none bg-transparent ml-[2rem text-white transition duration-500 hover:scale-110 placeholder:text-rosequarts" type="text" placeholder="Write your nickname :)" :value="nickname" @input="changeNickname" />
-                </form>
+                <input v-if="!hasNickname" class="outline-none bg-transparent ml-[2rem text-white transition duration-500 hover:scale-110 placeholder:text-rosequarts" type="text" placeholder="Write your nickname :)" :value="nickname" @input="changeNickname" />
                 <button v-if="!hasNickname" class="rounded-lg p-1 ml-[1rem] text-white transition duration-500 hover:bg-white hover:scale-125 hover:text-rosequarts" @click="submit">submit</button>
             </div>
         </div>
