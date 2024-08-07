@@ -63,7 +63,8 @@ function getClock() {
 }
 
 function reset() {
-    localStorage.clear();
+    localStorage.removeItem('nickname');
+    localStorage.removeItem('todos');
     location.reload();
 }
 </script>
