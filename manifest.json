@@ -8,11 +8,11 @@
 "author": "GY LEE",
 
 "action": {
-    "default_icon": "logo.png",
+    "default_icon": "./src/assets/logo.png",
     "default_popup": "index.html"
 },
 "icons": {
-   "128": "logo.png"
+   "128": "./src/assets/logo.png"
 },
 "permissions": [
     "unlimitedStorage"
