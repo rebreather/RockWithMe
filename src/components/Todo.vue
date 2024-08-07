@@ -1,8 +1,8 @@
 <template>
-    <div class="flex flex-col text-sm text-white bg-white/20 backdrop-blur-sm w-[15rem] h-[22rem] rounded-md my-32">
+    <div class="flex flex-col text-sm text-white bg-white/20 backdrop-blur-sm w-[15rem] h-[22rem] rounded-md mt-4">
         <div class="mb-2 p-2 border-b-double border-b-[1px] border-b-serenity">
             <form @submit="submit">
-            <input class="w-full text-center transition duration-500 hover:scale-110 italic bg-transparent outline-none placeholder: placeholder-white placeholder-opacity-45" type="text" maxlength="30" placeholder="Write a ToDo, press Enter" :value="todoInput" @input="changeTodo"/>
+            <input class="w-full text-center transition duration-500 hover:scale-110 italic bg-transparent outline-none placeholder: placeholder-white placeholder-opacity-60" type="text" maxlength="30" placeholder="Write a ToDo, press Enter" :value="todoInput" @input="changeTodo"/>
         </form>
         </div>
         <div class="todo overflow-y-scroll scroll-smooth">

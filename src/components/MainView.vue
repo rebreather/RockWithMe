@@ -1,6 +1,7 @@
 <template>
   <div class="px-[2.4rem] py-[2rem]" id="background" :style="backgroundStyle">
     <Header />
+    <Search />
     <Todo />
   </div>
 </template>
@@ -9,6 +10,7 @@
 import { ref, onMounted, onUnmounted, computed } from 'vue';
 import Header from './Header.vue';
 import Todo from './Todo.vue';
+import Search from './Search.vue';
 
 const currentImageIndex = ref(0);
 const isWidthFix = ref(false);
