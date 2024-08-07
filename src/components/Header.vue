@@ -4,9 +4,11 @@
             <span class="font-bold text-white text-3xl transition duration-500 hover:scale-130 hover:text-rosequarts">
                 {{ time }}
             </span>
-            <div>
+            <div class="flex items-center">
                 <span class="text-white italic ml-[2rem]">{{ greetingText }}</span>
-                <input v-if="!hasNickname" class="outline-none bg-transparent ml-[2rem text-white transition duration-500 hover:scale-110 placeholder:text-rosequarts" type="text" placeholder="Write your nickname :)" :value="nickname" @input="changeNickname" />
+                <form @submit="submit">
+                    <input v-if="!hasNickname" class="outline-none bg-transparent ml-[2rem text-white transition duration-500 hover:scale-110 placeholder:text-rosequarts" type="text" placeholder="Write your nickname :)" :value="nickname" @input="changeNickname" />
+                </form>
                 <button v-if="!hasNickname" class="rounded-lg p-1 ml-[1rem] text-white transition duration-500 hover:bg-white hover:scale-125 hover:text-rosequarts" @click="submit">submit</button>
             </div>
         </div>
