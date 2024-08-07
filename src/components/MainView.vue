@@ -1,8 +1,9 @@
 <template>
-  <div class="px-[2.4rem] py-[2rem]" id="background" :style="backgroundStyle">
+  <div class="px-[2.4rem] pt-8" id="background" :style="backgroundStyle">
     <Header />
     <Search />
     <Todo />
+    <Quotes />
   </div>
 </template>
 
@@ -11,6 +12,7 @@ import { ref, onMounted, onUnmounted, computed } from 'vue';
 import Header from './Header.vue';
 import Todo from './Todo.vue';
 import Search from './Search.vue';
+import Quotes from './Quotes.vue';
 
 const currentImageIndex = ref(0);
 const isWidthFix = ref(false);
@@ -63,7 +65,6 @@ onUnmounted(() => {
 #background {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   background-size: cover;
 }
 .backgroundImage {
